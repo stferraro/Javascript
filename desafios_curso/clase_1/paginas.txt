@@ -1,0 +1,8 @@
+https://www.uv.es/jac/guia/jscript/reloj.htm
+pagina que muestra un reloj en Javascript
+
+https://www.uv.es/jac/guia/jscript/colores.htm
+pagina que muestra los colores
+
+https://www.uv.es/jac/guia/jscript/calenda.htm
+da el nombre de mes 
