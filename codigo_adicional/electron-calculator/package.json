@@ -1,0 +1,31 @@
+{
+  "name": "electron-calculator",
+  "version": "1.0.0",
+  "description": "Una calculadora simple hecha con Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder --linux pacman"
+  },
+  "build": {
+    "appId": "com.tuempresa.calculator",
+    "productName": "Electron Calculator",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "snap",
+        "pacman"
+      ],
+      "category": "Utility",
+      "icon": "recursos/calc.jpg" 
+    }
+  },
+  "devDependencies": {
+    "electron": "^24.0.0",
+    "electron-builder": "^24.3.0"
+  },
+  "author": "Gerardo Ali Ferraro Schelijasch",
+  "license": "MIT"
+}
