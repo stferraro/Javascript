@@ -5,7 +5,7 @@ function createWindow() {
     const win = new BrowserWindow({
         width: 400,
         height: 500,
-        icon: path.join(__dirname, 'recursos', 'calc.jpg'), // Ruta al icono
+        icon: path.join(__dirname, 'recursos', 'calc.png'), // Ruta al icono
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
             contextIsolation: true,

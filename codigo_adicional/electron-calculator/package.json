@@ -3,29 +3,39 @@
   "version": "1.0.0",
   "description": "Una calculadora simple hecha con Electron",
   "main": "main.js",
+  "homepage": "https://github.com/stferraro/js/tree/master/codigo_adicional/electron-calculator",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder",
-    "dist": "electron-builder --linux pacman"
+    "build": "electron-builder"
   },
   "build": {
     "appId": "com.tuempresa.calculator",
     "productName": "Electron Calculator",
+    "directories": {
+      "output": "dist"
+    },
     "linux": {
       "target": [
         "AppImage",
-        "deb",
-        "snap",
-        "pacman"
+        "snap"
       ],
       "category": "Utility",
-      "icon": "recursos/calc.jpg" 
+      "icon": "recursos/calc.png"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
     }
   },
   "devDependencies": {
     "electron": "^24.0.0",
-    "electron-builder": "^24.3.0"
+    "electron-builder": "^24.13.3"
   },
-  "author": "Gerardo Ali Ferraro Schelijasch",
-  "license": "MIT"
+  "author": {
+    "name": "Gerardo Ali Ferraro Schelijasch",
+    "email": "gerferr83@gmail.com"
+  },
+  "license": "LGPL-2.1-or-later"
 }
