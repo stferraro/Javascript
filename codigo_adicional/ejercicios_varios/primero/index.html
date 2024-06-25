@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos varios en JS</title>
+    <link text="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Eventos varios en JS</h1>
+    <p id="parrafoSaludo">Hola mundo</p>
+    <button id="botonSaludo" onclick="saludar()">Saludar</button>
+    <button id="reset" onclick="reset()">Reset</button>
+
+    <h2>Ecuaciones de segundo grado</h2>
+    <form id="ecuaciones">
+        <label for="a">a</label>
+        <input type="text" name="a" id="a">
+        <label for="b">b</label>
+        <input type="text" name="b" id="b">
+        <label for="c">c</label>
+        <input type="text" name="c" id="c">
+        <button type="button" onclick="ecuaciones()">Calcular</button>
+        <button type="reset">Borrar</button>
+        <p id="soluciones"></p>
+    </form>
+    <script text="text/javascript" src="scripts/ecuaciones.js"></script>
+
+    <h3>Eventos del mouse</h3>
+    <p id="pMouse">Pasa el mouse por encima</p>
+    <p id="pMouse" onmouseover  ="cambia_color()">Pasa el mouse por encima</p>
+    <script text="text/javascript" src="scripts/mouse.js"></script>
+
+    <form id="form">
+        <label for="color">Color</label>
+        <input type="text" name="color" id="color">
+        <button type="submit">Cambia color</button>
+    </form>
+    <script text="text/javascript" src="scripts/script.js"></script>
+</body>
+<footer><p>Copyright 2024. All rights reserved, created by: Gerardo A. Ferraro</p></footer>
+</html>
